@@ -1,0 +1,16 @@
+{
+  "name": "web-instituto-don-bosco",
+  "version": "1.0.0",
+  "description": "Pagina web informativa del Instituto Don Bosco de Cobija con Node.js y Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

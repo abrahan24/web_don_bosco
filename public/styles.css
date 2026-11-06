@@ -243,6 +243,8 @@ h1 em { color: var(--gold); font-style: normal; }
 .accordion-content { padding: 0 21px 20px; }
 .accordion-content p { max-width: 700px; color: var(--muted); font-size: .92rem; }
 .accordion-item.active { border-color: #bdd2ed; }
+.accordion-item:focus-within { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(241, 189, 59, .28), 0 8px 24px rgba(11, 38, 80, .04); }
+.accordion-item button:focus-visible { outline-offset: -3px; }
 
 .contact-section { padding-top: 125px; padding-bottom: 125px; }
 .contact-card { display: grid; grid-template-columns: .9fr 1.1fr; gap: 34px; padding: 43px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: linear-gradient(132deg, #fff, #eaf3ff); box-shadow: var(--shadow); }
@@ -310,11 +312,13 @@ h1 em { color: var(--gold); font-style: normal; }
   .values-strip { grid-template-columns: 1fr; }
   .value-list { justify-content: flex-start; }
   .community-layout { gap: 40px; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 260px 190px 190px; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 260px 190px 190px 150px; }
+  .gallery-item { min-height: 0; }
   .gallery-feature { grid-column: span 2; grid-row: span 1; }
-  .gallery-tall { grid-column: span 1; grid-row: span 2; }
-  .gallery-wide { grid-column: span 1; }
-  .gallery-square { grid-column: span 1; }
+  .gallery-tall { grid-column: 1; grid-row: 2 / span 2; }
+  .gallery-grid .gallery-square:not(.gallery-last) { grid-column: 2; grid-row: 2; }
+  .gallery-wide { grid-column: 2; grid-row: 3; }
+  .gallery-last { grid-column: span 2; grid-row: 4; }
   .contact-card { padding: 28px; }
 }
 
@@ -338,7 +342,8 @@ h1 em { color: var(--gold); font-style: normal; }
   .service-grid { grid-template-columns: 1fr; }
   .service-aside { grid-column: auto; min-height: 200px; }
   .service-body p { min-height: auto; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 215px 170px 170px; gap: 10px; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 215px 170px 170px 145px; gap: 10px; }
+  .gallery-item { min-height: 0; }
   .gallery-item figcaption { right: 11px; bottom: 10px; left: 11px; }
   .gallery-item figcaption strong { font-size: .74rem; }
   .gallery-item figcaption span { font-size: .62rem; }

@@ -11,3 +11,13 @@ Task 2: complete (tests: `npm test` → 3/3 pass; visual system, responsive brea
 Task 3: complete (tests: `node --check public/script.js` → exit 0; mobile navigation, accordion state and demonstrative form feedback implemented).
 
 Task 4: complete (tests: `npm test`, `node --check public/script.js`, `git diff --check`, asset scan and `curl.exe ... http://127.0.0.1:3000/` → all passed; server returned HTTP 200).
+
+Final review: fresh reviewer found three Important findings and one Minor finding. The reviewer report noted that the current HEAD changed during its read; the changes were independently inspected in the working tree afterward.
+
+Final: fixed missing contact channels — `npm test` RED→GREEN; rendered the existing phone and email values with confirmation note.
+
+Final: fixed mobile gallery geometry — `npm test` RED→GREEN; added explicit mobile rows, last-item placement and `min-height: 0` overrides.
+
+Final: fixed accordion keyboard focus visibility — `npm test` RED→GREEN; added `:focus-within` styling and inset focus outline.
+
+Final: fixed future-program filler — `npm test` RED→GREEN; replaced it with confirmed attention-hours guidance.

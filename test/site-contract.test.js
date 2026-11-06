@@ -15,7 +15,10 @@ test('the page presents confirmed institutional information', () => {
   assert.match(html, /Padre Germán Barrera Blanco/);
   assert.match(html, /08:00/);
   assert.match(html, /14:00/);
+  assert.match(html, /\+591 79381157/);
+  assert.match(html, /barrerablanco34@gmail\.com/);
   assert.match(html, /content-status/);
+  assert.doesNotMatch(html, /La oferta puede ampliarse/);
 });
 
 test('the page uses real gallery items without an empty placeholder tile', () => {
@@ -28,6 +31,8 @@ test('the page uses real gallery items without an empty placeholder tile', () =>
 test('the visual system and interactions expose the approved behavior', () => {
   assert.match(css, /prefers-reduced-motion/);
   assert.match(css, /:focus-visible/);
+  assert.match(css, /accordion-item:focus-within/);
+  assert.match(css, /gallery-item\s*\{\s*min-height:\s*0/);
   assert.match(css, /--gold/);
   assert.match(js, /prefers-reduced-motion/);
   assert.match(js, /formStatus/);

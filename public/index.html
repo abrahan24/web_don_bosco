@@ -3,255 +3,223 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Instituto Don Bosco de Cobija | Página Informativa</title>
-  <meta name="description" content="Página web informativa del Instituto Don Bosco de Cobija, Pando. Información institucional, noticias, eventos, ubicación y contacto." />
+  <meta name="theme-color" content="#071c3b" />
+  <title>Centro de Formación Don Bosco de Cobija | Página Informativa</title>
+  <meta name="description" content="Conoce el Centro de Formación Don Bosco de Cobija, sus clases de computación, asistencia pedagógica, identidad y horario de atención." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header" id="inicio">
     <nav class="navbar container" aria-label="Navegación principal">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <span class="brand-mark">DB</span>
-        <span>
-          <strong>Instituto Don Bosco</strong>
-          <small>Cobija - Pando</small>
+        <span class="brand-mark" aria-hidden="true"><span>DB</span></span>
+        <span class="brand-copy">
+          <strong>Centro de Formación<br>Don Bosco</strong>
+          <small>Cobija · Pando</small>
         </span>
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">☰</button>
       <div class="nav-links" id="navLinks">
         <a href="#institucion">Institución</a>
-        <a href="#servicios">Información</a>
-        <a href="#noticias">Noticias</a>
-        <a href="#eventos">Eventos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#comunidad">Comunidad</a>
         <a href="#galeria">Galería</a>
-        <a href="#contacto" class="nav-cta">Contacto</a>
+        <a href="#contacto" class="nav-cta">Contactar <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
 
     <section class="hero container">
       <div class="hero-content reveal">
-        <span class="eyebrow">Página web informativa institucional</span>
-        <h1>Información clara, moderna y accesible para toda la comunidad educativa.</h1>
-        <p>
-          Un espacio digital para comunicar actividades, noticias, servicios académicos,
-          ubicación y datos importantes del Instituto Don Bosco de Cobija.
+        <span class="eyebrow">Formación que acompaña</span>
+        <h1>Aprende, crece y construye tu futuro <em>en comunidad.</em></h1>
+        <p class="hero-lead">
+          El Centro de Formación Don Bosco de Cobija abre un espacio cercano para aprender herramientas digitales y recibir acompañamiento pedagógico.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#institucion">Conocer más</a>
-          <a class="btn btn-secondary" href="#noticias">Ver novedades</a>
+          <a class="btn btn-primary" href="#institucion">Conocer el centro <span aria-hidden="true">→</span></a>
+          <a class="btn btn-quiet" href="#contacto">Consultar información</a>
         </div>
-        <div class="stats" aria-label="Datos destacados">
-          <article><strong>24/7</strong><span>Acceso a información</span></article>
-          <article><strong>100%</strong><span>Diseño responsivo</span></article>
-          <article><strong>+</strong><span>Comunicación institucional</span></article>
+        <div class="hero-details" aria-label="Datos principales del centro">
+          <div class="hero-detail">
+            <span class="detail-icon" aria-hidden="true">⌁</span>
+            <span><small>Autoridad</small><strong>Padre Germán Barrera Blanco</strong></span>
+          </div>
+          <div class="hero-detail">
+            <span class="detail-icon" aria-hidden="true">◷</span>
+            <span><small>Atención</small><strong>08:00–12:00 · 14:00–18:00</strong></span>
+          </div>
         </div>
       </div>
 
-      <div class="hero-card reveal">
-        <div class="image-box large">
-          <img src="imagenes/fachada-don-bosco.jpeg" alt="Fachada del Centro de Apoyo Escolar Don Bosco Cobija">
-        </div>
-        <div class="floating-card">
-          <strong>Comunidad Don Bosco</strong>
-          <span>Estudiantes • Docentes • Padres de familia</span>
+      <div class="hero-visual reveal">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <figure class="image-box hero-image">
+          <img src="imagenes/fachada-don-bosco.jpeg" alt="Fachada del Centro de Formación Don Bosco de Cobija">
+          <figcaption class="image-caption">
+            <span class="caption-kicker">Una casa para aprender</span>
+            <strong>Comunidad Don Bosco</strong>
+            <span>Cobija · Pando</span>
+          </figcaption>
+        </figure>
+        <div class="hero-stamp" aria-label="Formación y acompañamiento">
+          <span aria-hidden="true">✦</span>
+          <strong>Formación<br>con propósito</strong>
         </div>
       </div>
     </section>
+    <div class="hero-bottom container" aria-hidden="true"><span>Centro de Formación Don Bosco de Cobija</span><span>Formación · Servicio · Comunidad</span></div>
   </header>
 
   <main>
-    <section class="section container" id="institucion">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Nuestra institución</span>
-        <h2>Un sitio web para fortalecer la presencia digital del instituto</h2>
-        <p>
-          La página centraliza información académica e institucional para estudiantes,
-          docentes, padres de familia y público en general.
-        </p>
+    <section class="section container identity-section" id="institucion">
+      <div class="section-heading split-heading reveal">
+        <div>
+          <span class="eyebrow">Nuestra identidad</span>
+          <h2>Una formación cercana, inspirada en el legado de Don Bosco.</h2>
+        </div>
+        <div>
+          <p>Este espacio reúne la identidad y el propósito del Centro de Formación Don Bosco de Cobija para que la comunidad conozca qué hacemos y cómo acompañamos.</p>
+          <span class="content-status">Contenido institucional sugerido · pendiente de validación</span>
+        </div>
       </div>
 
-      <div class="grid two-cols align-center">
-        <div class="info-panel reveal">
-          <h3>Objetivo del sitio</h3>
-          <p>
-            Diseñar e implementar una página web informativa que facilite el acceso a
-            información institucional, académica, noticias, eventos, contacto y ubicación.
-          </p>
-          <ul class="check-list">
-            <li>Interfaz amigable, moderna y atractiva.</li>
-            <li>Información institucional organizada.</li>
-            <li>Secciones para noticias y eventos.</li>
-            <li>Datos de contacto y ubicación visibles.</li>
-            <li>Promoción del uso de herramientas tecnológicas.</li>
-          </ul>
+      <div class="identity-layout">
+        <article class="identity-story reveal">
+          <div class="story-number">01</div>
+          <span class="card-label">Historia e inspiración</span>
+          <h3>Educar desde la cercanía y la oportunidad.</h3>
+          <p>San Juan Bosco dedicó su vida a acompañar a niños y jóvenes, especialmente a quienes tenían menos oportunidades. Su propuesta unió educación, orientación, comunidad y valores para ayudar a cada persona a descubrir sus capacidades.</p>
+          <p>El Centro de Formación Don Bosco de Cobija recoge esa inspiración y la acerca a la realidad de su comunidad mediante aprendizaje digital y asistencia pedagógica.</p>
+          <div class="story-note"><span aria-hidden="true">✦</span><span>La historia específica de la sede de Cobija queda pendiente de completar con información oficial del centro.</span></div>
+        </article>
+
+        <div class="identity-cards">
+          <article class="mini-card mission-card reveal">
+            <span class="card-label">Misión sugerida</span>
+            <h3>Acompañar para aprender y avanzar.</h3>
+            <p>Acompañar la formación integral mediante oportunidades de aprendizaje en computación y apoyo pedagógico, con cercanía, responsabilidad y compromiso con la comunidad.</p>
+          </article>
+          <article class="mini-card vision-card reveal">
+            <span class="card-label">Visión sugerida</span>
+            <h3>Una referencia de formación en Cobija.</h3>
+            <p>Ser un centro reconocido por brindar formación accesible y herramientas digitales que ayuden a cada persona a desarrollar sus capacidades y construir un mejor proyecto de vida.</p>
+          </article>
         </div>
-        <div class="image-box reveal">
-          <img src="imagenes/letrero-don-bosco.png" alt="Letrero institucional del Centro de Apoyo Escolar Don Bosco Cobija">
-        </div>
+      </div>
+
+      <div class="values-strip reveal">
+        <div class="values-intro"><span class="card-label">Nuestros valores</span><strong>Crecer con otros también es aprender.</strong></div>
+        <ul class="value-list" aria-label="Valores sugeridos">
+          <li>Responsabilidad</li><li>Respeto</li><li>Solidaridad</li><li>Honestidad</li><li>Servicio</li><li>Cercanía</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section section-soft" id="servicios">
+    <section class="section section-soft services-section" id="servicios">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Información para todos</span>
-          <h2>Contenido organizado y fácil de consultar</h2>
-          <p>La página está pensada para que cualquier persona encuentre la información que necesita de forma rápida.</p>
+        <div class="section-heading split-heading reveal">
+          <div><span class="eyebrow">Lo que hacemos</span><h2>Aprendizajes útiles para la vida diaria.</h2></div>
+          <p>Dos caminos de acompañamiento para fortalecer conocimientos, confianza y nuevas oportunidades.</p>
         </div>
-
-        <div class="cards">
-          <article class="card reveal">
-            <div class="icon">🎓</div>
-            <h3>Información académica</h3>
-            <p>Comunicados, horarios, actividades educativas y datos importantes para estudiantes.</p>
+        <div class="service-grid">
+          <article class="service-card service-blue reveal">
+            <div class="service-top"><span class="service-index">01</span><span class="service-icon" aria-hidden="true">⌘</span></div>
+            <div class="service-body"><span class="card-label">Formación digital</span><h3>Clases de computación</h3><p>Aprende y fortalece tus habilidades digitales en un espacio de formación pensado para responder a las necesidades de la comunidad.</p><a class="text-link" href="#contacto">Solicitar información <span aria-hidden="true">→</span></a></div>
           </article>
-          <article class="card reveal">
-            <div class="icon">🏫</div>
-            <h3>Información institucional</h3>
-            <p>Historia, misión, visión, valores y datos generales del Instituto Don Bosco.</p>
+          <article class="service-card service-gold reveal">
+            <div class="service-top"><span class="service-index">02</span><span class="service-icon" aria-hidden="true">✎</span></div>
+            <div class="service-body"><span class="card-label">Acompañamiento educativo</span><h3>Asistencia pedagógica</h3><p>Un apoyo cercano para orientar procesos de aprendizaje, resolver dudas y avanzar con mayor seguridad en los desafíos educativos.</p><a class="text-link" href="#contacto">Consultar atención <span aria-hidden="true">→</span></a></div>
           </article>
-          <article class="card reveal">
-            <div class="icon">📢</div>
-            <h3>Comunicados</h3>
-            <p>Publicación de avisos oficiales para padres de familia, docentes y estudiantes.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon">📍</div>
-            <h3>Ubicación y contacto</h3>
-            <p>Acceso a dirección, mapa referencial, teléfono, correo y redes sociales.</p>
-          </article>
+          <aside class="service-aside reveal">
+            <span class="aside-mark" aria-hidden="true">✦</span>
+            <h3>Un espacio para seguir creciendo.</h3>
+            <p>La oferta puede ampliarse con nuevos cursos y actividades cuando el centro confirme sus próximos programas.</p>
+            <div class="aside-line"><span></span><span></span><span></span></div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="section container" id="noticias">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Noticias</span>
-        <h2>Últimos comunicados y novedades</h2>
-        <p>Estos bloques pueden actualizarse con noticias reales del instituto.</p>
-      </div>
-
-      <div class="news-grid">
-        <article class="news-card reveal">
-          <div class="image-box small"><img src="imagenes/san-juan-bosco.png" alt="Imagen de San Juan Bosco"></div>
-          <div class="news-content">
-            <time>Actualización institucional</time>
-            <h3>Comunicado importante para la comunidad educativa</h3>
-            <p>Espacio para publicar avisos, reuniones, actividades académicas o información general.</p>
-            <a href="#contacto">Leer más →</a>
-          </div>
-        </article>
-        <article class="news-card reveal">
-          <div class="image-box small"><img src="imagenes/laboratorio-computacion.png" alt="Estudiantes en laboratorio de computación"></div>
-          <div class="news-content">
-            <time>Actividad educativa</time>
-            <h3>Participación estudiantil y actividades formativas</h3>
-            <p>Contenido dedicado a mostrar actividades, ferias, exposiciones y proyectos estudiantiles.</p>
-            <a href="#contacto">Leer más →</a>
-          </div>
-        </article>
-        <article class="news-card reveal">
-          <div class="image-box small"><img src="imagenes/placa-institucional.png" alt="Placa institucional de cooperación salesiana"></div>
-          <div class="news-content">
-            <time>Evento institucional</time>
-            <h3>Eventos y fechas importantes del instituto</h3>
-            <p>Sección para informar fechas de actos, defensas, reuniones, inscripciones y más.</p>
-            <a href="#eventos">Ver eventos →</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="eventos">
-      <div class="container">
-        <div class="section-heading light reveal">
-          <span class="eyebrow">Agenda</span>
-          <h2>Cronograma de actividades</h2>
-          <p>Ejemplo de línea de tiempo dinámica para presentar las fases o eventos principales.</p>
+    <section class="section section-dark community-section" id="comunidad">
+      <div class="container community-layout">
+        <div class="community-copy reveal">
+          <span class="eyebrow eyebrow-light">Una comunidad informada</span>
+          <h2>La comunicación también forma parte del acompañamiento.</h2>
+          <p>Este sitio está preparado para compartir novedades, actividades y orientaciones útiles para estudiantes, familias, docentes y visitantes.</p>
+          <a class="btn btn-light" href="#contacto">Conocer el horario <span aria-hidden="true">→</span></a>
         </div>
-
-        <div class="timeline reveal">
-          <div class="timeline-item active" data-month="Mayo">
-            <strong>Pre defensa de perfil de grado</strong>
-            <span>Presentación inicial y revisión del proyecto.</span>
-          </div>
-          <div class="timeline-item" data-month="Junio">
-            <strong>Presentación del perfil de grado</strong>
-            <span>Socialización del avance y ajustes correspondientes.</span>
-          </div>
-          <div class="timeline-item" data-month="Junio">
-            <strong>Recolección de materiales</strong>
-            <span>Preparación de textos, fotografías y recursos para la página.</span>
-          </div>
-          <div class="timeline-item" data-month="Julio">
-            <strong>Diseño y elaboración del proyecto</strong>
-            <span>Construcción, pruebas y publicación del sitio web.</span>
-          </div>
+        <div class="community-board reveal">
+          <div class="board-header"><span>En este espacio encontrarás</span><span class="board-dot" aria-hidden="true"></span></div>
+          <div class="board-item"><span class="board-number">01</span><div><strong>Noticias y comunicados</strong><p>Avisos oficiales y novedades del centro.</p></div><span aria-hidden="true">↗</span></div>
+          <div class="board-item"><span class="board-number">02</span><div><strong>Actividades formativas</strong><p>Momentos de aprendizaje y participación.</p></div><span aria-hidden="true">↗</span></div>
+          <div class="board-item"><span class="board-number">03</span><div><strong>Orientación para la comunidad</strong><p>Datos de contacto y atención actualizados.</p></div><span aria-hidden="true">↗</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section container" id="galeria">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Galería</span>
-        <h2>Espacios listos para agregar imágenes</h2>
-        <p>Los recuadros están vacíos para que puedas colocar fotografías reales del instituto, estudiantes, eventos o ambientes.</p>
+    <section class="section container gallery-section" id="galeria">
+      <div class="section-heading split-heading reveal">
+        <div><span class="eyebrow">Nuestra casa</span><h2>Un vistazo a los espacios que nos conectan.</h2></div>
+        <p>Imágenes disponibles del centro y de la identidad que inspira su propuesta formativa.</p>
       </div>
       <div class="gallery-grid">
-        <div class="image-box reveal"><img src="imagenes/fachada-don-bosco.jpeg" alt="Fachada del Instituto Don Bosco"></div>
-        <div class="image-box reveal"><img src="imagenes/laboratorio-computacion.png" alt="Laboratorio de computación"></div>
-        <div class="image-box reveal"><img src="imagenes/san-juan-bosco.png" alt="San Juan Bosco"></div>
-        <div class="image-box reveal"><img src="imagenes/letrero-don-bosco.png" alt="Letrero Don Bosco Cobija"></div>
-        <div class="image-box reveal"><img src="imagenes/placa-institucional.png" alt="Placa institucional"></div>
-        <div class="image-placeholder reveal"><span>ESPACIO PARA NUEVA IMAGEN</span><small>Puedes agregar otra foto aquí</small></div>
+        <figure class="gallery-item gallery-feature reveal"><img src="imagenes/fachada-don-bosco.jpeg" alt="Fachada del Centro de Formación Don Bosco de Cobija"><figcaption><span>01</span><strong>La casa Don Bosco</strong></figcaption></figure>
+        <figure class="gallery-item gallery-tall reveal"><img src="imagenes/laboratorio-computacion.png" alt="Laboratorio de computación del centro"><figcaption><span>02</span><strong>Aprendizaje digital</strong></figcaption></figure>
+        <figure class="gallery-item gallery-square reveal"><img src="imagenes/san-juan-bosco.png" alt="Imagen de San Juan Bosco"><figcaption><span>03</span><strong>Inspiración</strong></figcaption></figure>
+        <figure class="gallery-item gallery-wide reveal"><img src="imagenes/letrero-don-bosco.png" alt="Letrero del Centro de Formación Don Bosco"><figcaption><span>04</span><strong>Identidad</strong></figcaption></figure>
+        <figure class="gallery-item gallery-square reveal"><img src="imagenes/placa-institucional.png" alt="Placa institucional de cooperación salesiana"><figcaption><span>05</span><strong>Comunidad</strong></figcaption></figure>
       </div>
     </section>
 
-    <section class="section section-soft">
+    <section class="section section-soft faq-section">
       <div class="container faq-wrap">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Preguntas frecuentes</span>
-          <h2>Información rápida</h2>
-        </div>
+        <div class="section-heading reveal"><span class="eyebrow">Información rápida</span><h2>Preguntas frecuentes</h2><p>Respuestas breves para orientarte antes de visitar o contactar al centro.</p></div>
         <div class="accordion reveal" id="accordion">
-          <button class="accordion-item active">
-            <span>¿Para qué sirve esta página web?</span><b>+</b>
-            <p>Sirve para compartir información institucional, académica, noticias, eventos y datos de contacto del Instituto Don Bosco.</p>
-          </button>
-          <button class="accordion-item">
-            <span>¿Quiénes pueden visitar la página?</span><b>+</b>
-            <p>Está dirigida a estudiantes, docentes, padres de familia y público en general.</p>
-          </button>
-          <button class="accordion-item">
-            <span>¿Se puede actualizar la información?</span><b>+</b>
-            <p>Sí. La recomendación es mantener la página actualizada para garantizar su utilidad y continuidad.</p>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" id="contacto">
-      <div class="contact-card reveal">
-        <div>
-          <span class="eyebrow">Contacto</span>
-          <h2>Instituto Don Bosco de Cobija</h2>
-          <p>Agrega aquí los datos oficiales del instituto para que la comunidad pueda comunicarse fácilmente.</p>
-          <div class="contact-list">
-            <span>📍 Dirección: Cobija, Pando - Bolivia</span>
-            <span>☎ Teléfono: __________________</span>
-            <span>✉ Correo: __________________</span>
-            <span>🌐 Redes sociales: __________________</span>
+          <div class="accordion-item active">
+            <button type="button" aria-expanded="true" aria-controls="faq-1"><span>¿Qué servicios ofrece el centro?</span><b class="accordion-symbol" aria-hidden="true">−</b></button>
+            <div class="accordion-content" id="faq-1"><p>Actualmente ofrece clases de computación y asistencia pedagógica.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-2"><span>¿Cuál es el horario de atención?</span><b class="accordion-symbol" aria-hidden="true">+</b></button>
+            <div class="accordion-content" id="faq-2" hidden><p>El centro atiende de 08:00 a 12:00 y de 14:00 a 18:00.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-3"><span>¿A quién está dirigido este espacio?</span><b class="accordion-symbol" aria-hidden="true">+</b></button>
+            <div class="accordion-content" id="faq-3" hidden><p>Está pensado para estudiantes, familias, docentes y cualquier persona que desee conocer la propuesta del centro.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-4"><span>¿Cómo puedo solicitar más información?</span><b class="accordion-symbol" aria-hidden="true">+</b></button>
+            <div class="accordion-content" id="faq-4" hidden><p>Puedes revisar los datos de contacto y acercarte durante el horario de atención para recibir orientación.</p></div>
           </div>
         </div>
-        <form class="contact-form" onsubmit="return false;" aria-label="Formulario demostrativo">
-          <label>Nombre completo<input type="text" placeholder="Escribe tu nombre" /></label>
-          <label>Correo o teléfono<input type="text" placeholder="Dato de contacto" /></label>
-          <label>Mensaje<textarea placeholder="Escribe tu consulta"></textarea></label>
-          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
-          <small>Formulario demostrativo. Para hacerlo funcional se debe conectar a un servicio o backend.</small>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contacto">
+      <div class="contact-card reveal">
+        <div class="contact-intro">
+          <span class="eyebrow">Estamos para orientarte</span>
+          <h2>Centro de Formación Don Bosco de Cobija</h2>
+          <p>Acércate para conocer las opciones de formación y acompañamiento disponibles para la comunidad.</p>
+          <div class="contact-meta">
+            <div class="contact-meta-item"><span class="meta-symbol" aria-hidden="true">⌖</span><span><small>Ubicación</small><strong>Cobija, Pando · Bolivia</strong></span></div>
+            <div class="contact-meta-item"><span class="meta-symbol" aria-hidden="true">◷</span><span><small>Horario de atención</small><strong>08:00–12:00 · 14:00–18:00</strong></span></div>
+            <div class="contact-meta-item"><span class="meta-symbol" aria-hidden="true">✦</span><span><small>Autoridad</small><strong>Padre Germán Barrera Blanco</strong></span></div>
+          </div>
+          <p class="contact-note"><strong>Nota:</strong> el teléfono y correo visibles en esta versión deben ser confirmados por el centro antes de su publicación definitiva.</p>
+        </div>
+        <form class="contact-form" id="contactForm" aria-label="Formulario demostrativo de contacto">
+          <div class="form-heading"><span class="card-label">Escríbenos</span><h3>¿Tienes una consulta?</h3><p>Déjanos tus datos para preparar el contacto.</p></div>
+          <label>Nombre completo<input type="text" name="name" placeholder="Escribe tu nombre" required /></label>
+          <label>Correo o teléfono<input type="text" name="contact" placeholder="Dato de contacto" required /></label>
+          <label>Mensaje<textarea name="message" placeholder="Escribe tu consulta" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Preparar consulta <span aria-hidden="true">→</span></button>
+          <small class="form-note">Formulario demostrativo: no envía datos todavía.</small>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -259,8 +227,9 @@
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>© 2026 Instituto Don Bosco de Cobija. Página informativa.</p>
-      <a href="#inicio">Volver arriba ↑</a>
+      <div><strong>Centro de Formación Don Bosco</strong><span>Cobija · Pando · Bolivia</span></div>
+      <p>Formación, servicio y comunidad.</p>
+      <a href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
     </div>
   </footer>
 

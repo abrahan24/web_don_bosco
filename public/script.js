@@ -1,6 +1,8 @@
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
+document.documentElement.classList.add('js-enhanced');
+
 const setMenuState = (isOpen) => {
   if (!menuToggle || !navLinks) return;
   navLinks.classList.toggle('open', isOpen);
